@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+
+html,
+body {
+    height : 100%;
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/infinityPool.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: 60%;
+    background-attachment: fixed;
+    // background : linear-gradient(0deg, #5f4ead 0%, #00043b 100%) no-repeat fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    padding    : 0;
+
+    .footer-bottom {
+        text-align: center;
+        font-size: 1.15rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        color: #fffcf2 !important;
+        background: linear-gradient(rgba(34, 34, 34, 0), rgba(34, 34, 34, 1.0), rgba(34, 34, 34, 1.0));
+        margin-bottom: 0;
+        font-weight: 300;
+
+        p {
+            margin-top: 45px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+nav {
+    //background-color: rgba(70, 70, 70, 0.26);
+    background : linear-gradient(rgba(237, 237, 237, 1.0), rgba(237, 237, 237, 1), rgba(237, 237, 237, 0.0)) no-repeat;
+    height: 180px;
+    min-width: 820px;
+    z-index: 2;
+
+
+    button,
+    .btn {
+        background   : transparent;
+        color        :rgba(70, 70, 70, 0.86);
+        border       : 1.5px solid rgba(70, 70, 70, 0.56);
+        border-radius: 20px;
+        box-shadow   : 2px 2px 3px 2px grey !important;
+        font-size    : 1.3rem;
+        outline      : none;
+        padding      : 0.5rem 1.5rem;
+        margin       : 1.5rem 0 auto 3rem;
+        font-weight  : bold;
+
+        &:focus,
+        &:hover {
+            background: lightgrey;
+        }
+
+        &:active {
+            background: grey;
+        }
+    }
+
+    .koszyk-nav {
+        float: right;
+        margin-right: 3rem;
+    }
+}
+
+main {
+
+    padding: 0 2rem;
+    margin-bottom: 100px;
+    text-align: center;
+    z-index: 1;
+    
+    h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 2rem 0;
+        color:#070707;
+    }
+
+    p {
+        margin: 1rem 0;
+        color:#070707;
+    }
+
+    section {
+        text-align: center;
+        padding-bottom: 90px;
+
+        h2 {
+            margin-top: 0;
+        }
+
+    }
+
+    .opis {
+        background-color: rgba(90, 90, 90, 0.65);
+        box-shadow      : #69696948 0 2px 5px 2px;
+        min-width: 550px;
+        max-width: 900px;
+        border-radius: 50px;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        h4, p {
+            margin: 0 0 0.4rem 0;
+        }
+
+        button,
+            .btn {
+                background: transparent;
+                border    : 1.5px solid;
+                border-radius: 20px;
+
+                &:focus {
+                    background: transparent;
+                }
+
+                &:hover {
+                background: lightgrey;
+                }
+
+                &:active {
+                background: grey;
+                }
+            }
+    }
+
+    ul {
+        list-style: none;
+        padding   : 0;
+        display: inline-block;
+        text-align: left;
+        
+
+        li {
+            background-color: rgba(90, 90, 90, 0.65);
+            box-shadow      : #69696948 0 2px 5px 2px;
+            padding         : 1rem;
+            text-align: center;
+            min-width: 550px;
+            max-width: 900px;
+            border-radius: 50px;
+            
+            h4, p {
+                color: #fffcf2;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+
+                &>*+* {
+                    margin-left: 1rem;
+                }
+            }
+
+            button,
+            .btn {
+                background: transparent;
+                border    : 1.5px solid;
+                border-radius: 20px;
+
+                &:focus {
+                    background: transparent;
+                }
+
+                &:hover {
+                background: lightgrey;
+                }
+
+                &:active {
+                background: grey;
+                }
+            }
+            .btn-success {
+                &:focus {
+                    background: transparent;
+                }
+
+                &:hover {
+                background: rgb(11, 189, 11);
+                }
+
+                &:active {
+                background: rgb(8, 121, 8);
+                }
+            }
+        }
+
+        li+li {
+            margin-top: 2rem;
+        }
+    }
+
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+
+        td>button {
+            border: 0;
+        }
+    }
+
+    th {
+        color:#fffcf2;
+    }
+
+    td {
+        color:#fffcf2;
+    }
+
+    article {
+        $bg-color-1: #fffcf2;
+        $bg-color-2: #fff6dd;
+
+        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
+        box-shadow: #00576e 0 2px 8px 2px;
+        margin    : 2em 1em;
+        padding   : 1rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background: #ddc47d;
+            color     : white;
+            margin    : 0;
+            padding   : 1rem 0.5rem;
+        }
+    }
+
+    .koszyk {
+        max-width: 500px;
+        background-color: rgba(90, 90, 90, 0.65);
+        border-radius: 25px;
+        padding: 10px 25px;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            color: #fffcf2;
+            margin-top: 15px;
+        }
+
+        form {
+            text-align: left;
+            padding: 1rem 0;
+
+            label  {
+                color: #fffcf2;
+            }
+        }
+    }
+
+    .koszyk-window {
+        background-color: rgba(17, 24, 92, 0.85);
+        z-index: 2000;
+        max-width: 450px;
+        position: fixed;
+        top: 10%;
+        right: 20px; 
+    }
+
+    .go-in {
+        animation-name: upOpacity;
+        animation-duration: 1s;
+    }
+
+    .go-out {
+        
+        animation-name: downOpacity;
+        animation-duration: 1s;
+    }
+
+    @keyframes upOpacity {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    
+
+    @keyframes downOpacity {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+
+}
+
